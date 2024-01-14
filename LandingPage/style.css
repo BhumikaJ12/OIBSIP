@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.logo {
+    width: 80px;
+    height: 70px;
+}
+
+#navItem1 {
+    color: #323f4b;
+    font-family: "Roboto";
+}
+
+#navItem2 {
+    color: #323f4b;
+    font-family: "Roboto";
+}
+
+#navItem3 {
+    color: #323f4b;
+    font-family: "Roboto";
+}
+
+#navItem4 {
+    color: #323f4b;
+    font-family: "Roboto";
+}
+
+.banner-section {
+    background-image: url("https://www.shutterstock.com/image-photo/portrait-young-asian-man-wear-600nw-1589738461.jpg");
+    height: 100vh;
+    background-size: cover;
+}
+
+.banner-heading {
+    color: white;
+    font-family: "Roboto";
+    font-size: 45px;
+    font-weight: 300;
+}
+
+.product-banner {
+    background-image: url("https://www.warbyparker.com/learn/wp-content/uploads/2023/10/three-pairs-of-glasses-stacked.jpg");
+    height: 100vh;
+    background-size: cover;
+    padding: 400px;
+    background-position: 20%;
+    background-attachment: fixed;
+}
+
+.pr-size {
+    background-size: cover;
+    height: 350px;
+    width: 100px;
+}
+
+.pr1 {
+    background-image: url("https://theme-prolens.myshopify.com/cdn/shop/files/Banner_below1.jpg?v=1637672790");
+    background-position: 10%;
+}
+
+.pr2 {
+    background-position: 10%;
+    background-image: url("https://theme-prolens.myshopify.com/cdn/shop/files/Banner_below3.jpg?v=1637672830");
+}
+
+.pr3 {
+    background-position: 10%;
+    background-image: url("https://theme-prolens.myshopify.com/cdn/shop/files/Banner_below2.jpg?v=1637672814");
+}
+
+.footer {
+    color: white;
+}
+
+.icon {
+    margin: 3px;
+}
+
+.delivery-and-payment-section {
+    background-color: white;
+}
+
+.delivery-and-payment-section-img {
+    width: 270px;
+}
+
+.delivery-and-payment-section-heading {
+    color: #183b56;
+    font-family: "Roboto";
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.delivery-and-payment-section-description {
+    color: #5a7184;
+    font-family: "Roboto";
+    font-size: 16px;
+}
+
+.payment-card-img {
+    width: 50px;
+    height: 50px;
+    margin-right: 28px;
+}
+
+.noborder {
+    border-width: 0px;
+}
