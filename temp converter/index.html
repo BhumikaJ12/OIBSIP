@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Temperature Converter</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin-top: 50px;
+    }
+    #result {
+        margin-top: 20px;
+        font-size: 20px;
+    }
+</style>
+</head>
+<body>
+
+<h2>Temperature Converter</h2>
+
+<input type="number" id="inputTemp" placeholder="Enter temperature">
+<br><br>
+
+<!-- From Unit -->
+<label><input type="radio" name="fromUnit" value="celsius" checked> Celsius</label>
+<label><input type="radio" name="fromUnit" value="fahrenheit"> Fahrenheit</label>
+<label><input type="radio" name="fromUnit" value="kelvin"> Kelvin</label>
+<br><br>
+
+<!-- To Unit -->
+<label><input type="radio" name="toUnit" value="celsius"> Celsius</label>
+<label><input type="radio" name="toUnit" value="fahrenheit"> Fahrenheit</label>
+<label><input type="radio" name="toUnit" value="kelvin"> Kelvin</label>
+<br><br>
+
+<button onclick="convertTemperature()">Convert</button>
+
+<div id="result"></div>
+
+<script>
+function convertTemperature() {
+    var temp = parseFloat(document.getElementById("inputTemp").value);
+    var fromUnit = document.querySelector('input[name="fromUnit"]:checked').value;
+    var toUnit = document.querySelector('input[name="toUnit"]:checked').value;
+
+    var result;
+
+    if (fromUnit === "celsius" && toUnit === "fahrenheit") {
+        result = (temp * 9/5) + 32;
+    } else if (fromUnit === "celsius" && toUnit === "kelvin") {
+        result = temp + 273.15;
+    } else if (fromUnit === "fahrenheit" && toUnit === "celsius") {
+        result = (temp - 32) * 5/9;
+    } else if (fromUnit === "fahrenheit" && toUnit === "kelvin") {
+        result = (temp - 32) * 5/9 + 273.15;
+    } else if (fromUnit === "kelvin" && toUnit === "celsius") {
+        result = temp - 273.15;
+    } else if (fromUnit === "kelvin" && toUnit === "fahrenheit") {
+        result = (temp - 273.15) * 9/5 + 32;
+    } else {
+        result = temp;  // Same unit conversion
+    }
+
+    document.getElementById("result").innerHTML = temp + "°" + fromUnit.toUpperCase() + " = " + result.toFixed(2) + "°" + toUnit.toUpperCase();
+}
+</script>
+
+</body>
+</html>
