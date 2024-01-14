@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+#contact, #projects, #aboutMe {
+    margin-top: 4rem;
+    padding-top: 4rem;
+}
+#contact {
+    padding-bottom: 4rem;
+}
+
+.hero-bg{
+    background-image: url('https://images.unsplash.com/photo-1701655987920-1b8527b9b9a6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    height: 100vh;
+    color: rgb(255, 255, 255);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    padding-top: 485px;
+    background-attachment: fixed;
+}
+.hero-title{
+    font-size: 62px;
+    font-weight: bold;
+}
+.hero-desc{
+    font-size: 30px;
+}
+
+.icon{
+    border-radius: 10px;
+}
+
+.imageAboutPage {
+    width: 90%;
+    background-size: cover;
+    height: 90%;
+}
+
+.servicesText.card {
+    
+    cursor: pointer;
+  }
+.servicesIcon {
+    color: rgb(92, 91, 91)
+}
+.card-title {
+    text-align: center;
+}
+.card:hover .servicesIcon {
+    color: #008000;
+}
+.servicesText:hover {
+    border: 1px solid #008000;
+}
+.bold{
+    font-weight: bold;
+}
+
+.social-icons {
+    font-size: 36px;
+    cursor: pointer;
+}
+.fa-facebook:hover,.fa-instagram:hover,.fa-twitter:hover,.fa-linkedin:hover, .fa-twitch:hover {
+    color: #008000;
+}
+.fab {
+    color: #000000;
+}
+/* footer styling */
+#footer {
+    background-color: #808080;
+    text-align: center;
+}
+
+. card-mine{
+    height: 45vh;
+}
